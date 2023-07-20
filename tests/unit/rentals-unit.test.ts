@@ -189,7 +189,7 @@ describe("Rentals Service Unit Tests", () => {
       });
     })
 
-    it("should give an error  when user has already rented a movie", async () => {
+    it("should give an error when user has already rented a movie", async () => {
       const user = {
         id: 1,
         firstName: faker.person.firstName(),
@@ -206,7 +206,7 @@ describe("Rentals Service Unit Tests", () => {
         rentalId: 1,
       };
 
-      const rentalsByUserId = [ // Simulate that the user has already rented a movie
+      const rentalsByUserId = [
       {
         id: 3,
         date: new Date(),
